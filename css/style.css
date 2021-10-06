@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+h1,h2,h3,p,figure,ul,ol,section, address{
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+a, abbr{
+    text-decoration: none;
+}
+h1,h2,h3{
+    font-weight: 700;
+}
+a,button{
+    text-decoration: none;
+    padding: 0;
+    border: 0;
+}
+*{
+    box-sizing: border-box;
+}
+nav{
+    display: grid;
+    justify-content: right;
+    height: 10rem;
+    font-size: 2rem;
+}
+nav ul li{
+    display: inline;
+    font-size: 2.6rem;
+    vertical-align: middle;
+    padding-left: .5rem;
+}
+nav ul li a{
+    width: 100%;
+    font-size: 3rem;
+}
+nav ul li a span{
+    border-radius: 1rem;
+    vertical-align: middle;
+    color: #4d4d4d;
+}
+nav ul li a span:hover, nav ul li img:hover{
+    background-color: #ebecee;
+}
+nav ul li a{
+    color: #222;
+}
+nav ul li img{
+    padding: 1rem;
+    max-width: 8rem;
+    border-radius: 4rem;
+}
+main{
+    padding-top: 5rem;
+    text-align: center;
+    padding-bottom: 18rem;
+
+}
+main figure img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+main form{
+    border-color: #ebecee;
+}
+main form .search_bar{
+    font-size: 2rem;
+    border: solid .3rem #ebecee;
+    border-radius: 3rem;
+    width: 80rem;
+    padding: 1.5rem;
+    margin: 1rem auto;
+}
+main form .search_bar:hover{
+    box-shadow: .2rem .2rem 1rem #87878742;
+}
+main form button{
+    border-radius: .5rem;
+    margin: 1rem 1rem auto;
+    font-size: 1.6rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+main form button:hover{
+    box-shadow: .1rem .1rem .1em #8787878a;
+}
+main p{
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+main p a:hover{
+    text-decoration: underline;
+}
+footer{
+    color: #4e4e4e;
+    background-color: #f2f2f2;
+    font-size: 1.6rem;
+}
+footer section{
+    text-align: center;
+}
+footer section ul{
+    display: grid;
+    text-align: justify;
+    grid-template-columns: repeat(4, 2fr);
+    text-align: center;
+}
+
+footer ul li a{
+    color: #5c5b5b;
+    font-size: 2rem;
+    font-weight: 600;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 70.0rem) {
+    main form .search_bar{
+        width: 30rem;
+    }
+    footer{
+        height: 40rem;
+    }
+    footer section ul{
+        display: grid;
+        text-align: justify;
+        grid-template-columns: repeat(2, 4fr);
+        text-align: center;
+    }
+    footer section ul li{
+        line-height: 4rem;
+    }
+}
+
