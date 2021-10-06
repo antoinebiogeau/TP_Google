@@ -112,6 +112,7 @@ footer{
 footer section{
     text-align: center;
 }
+
 footer section ul{
     display: grid;
     text-align: justify;
